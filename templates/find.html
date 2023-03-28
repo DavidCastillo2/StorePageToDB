@@ -1,0 +1,23 @@
+{% extends "layout.html" %}
+{% block css %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/find.css') }}">
+{% endblock %}
+
+{% block content %}
+<h1>CBD Price Checker</h1>
+<div class="content">
+   <div class="login">
+      <form method="post" class="loginForm">
+      <label for="name">Name:</label>
+      <input name="name" id="name" required>
+      <input type="submit" name="findName" value="Submit"><br />
+      </form>
+
+      <form method="post" class="loginForm">
+      <label for="brand">Brand:</label>
+      <input name="brand" id="brand" required>
+      <input type="submit" name="findBrand" value="Submit"><br />
+      </form>
+   </div>
+</div>
+{% endblock %}

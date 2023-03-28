@@ -1,0 +1,8 @@
+beautifulsoup4
+click
+Flask
+Jinja2
+gunicorn
+lxml
+celery
+redis

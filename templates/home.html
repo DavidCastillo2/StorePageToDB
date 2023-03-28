@@ -1,0 +1,43 @@
+{% extends "layout.html" %}
+{% block css %}
+<link rel="stylesheet" href="/static/styles/home.css" />
+{% endblock %}
+
+
+{% block content %}
+        <h1>CBD Price Checker</h1>
+        <p>
+            Working on making this not look like trash
+        </p>
+    <table style="width:100%">
+        <tr>
+            <td>name</td>
+            <td>price</td>
+            <td>category</td>
+            <td>SKU</td>
+            <td>brand</td>
+            <td>tags</td>
+            <td>PageURL</td>
+        </tr>
+        {% if items is iterable() %}
+            {% for item in items %}
+            <tr>
+                <td>{{item.name}}</td>
+                <td>
+                {% if item.price|length > 1 %}
+                    ${{item.price[0]}} - {{item.price[1]}}
+                {% else %}
+                    ${{item.price[0]}}
+                {% endif %}
+                </td>
+                <td>{{item.category}}</td>
+                <td>{{item.SKU}}</td>
+                <td>{{item.brand[0]}}</td>
+                <td>{{item.tags[0]}}</td>
+                <td> <a href="{{item.url}}">URL</a> </td>
+            </tr>
+            {% endfor %}
+        {% endif %}
+    </table>
+
+{% endblock %}

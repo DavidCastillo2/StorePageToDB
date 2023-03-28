@@ -1,0 +1,128 @@
+.Main {
+    width: 98%;
+    height: 84%;
+    display: flex;
+    flex-direction: row;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+.leftBox {
+    padding: 1rem;
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.rightBox {
+    position: relative;
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.info {
+    padding-top: 2rem;
+    font-size: 20px;
+    width: 100%;
+    height: 30%;
+}
+
+.infoBox {
+    overflow: auto;
+    border-radius: 25px;
+    width: 60%;
+    border-style: solid;
+    border-width: 2px;
+    border-color: rgb(0, 0, 0);
+    padding: 12px;
+}
+
+.candidateInfo {
+    position: relative;
+    width: 100%;
+    height: 70%;
+    overflow: auto;
+}
+
+.caucusInfo {
+    width: 100%;
+    height: 30%;
+    overflow: auto;
+}
+
+.canPreview {
+    overflow-y: auto;
+    border-radius: 25px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: rgb(0, 0, 0);
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
+
+.canBox {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 240px;
+}
+
+.canBoxImg {
+    margin-left: 1rem;
+    width: 20%;
+    height: 80%;
+    border-radius: 50%;
+    overflow: auto;
+}
+    .canBoxImg img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+
+.titleBox {
+    width: 100%;
+    position: absolute;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 30px 30px 0px 0px;
+    background: #00d1b2;
+}
+
+.canTitle {
+    margin-top: 45px;
+    width: 100%;
+    position: absolute;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 30px 30px 0px 0px;
+    background: #00d1b2;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+.submitButton {
+    font-size: 30px;
+    color: white;
+    background: #00d1b2;
+    border-radius: 30px;
+    width: 30%;
+    padding: 1rem;
+    align-content: center;
+    text-align: center;
+    position: absolute;
+    bottom: 7%;
+    left: 25%;
+}

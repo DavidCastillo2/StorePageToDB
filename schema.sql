@@ -1,0 +1,27 @@
+-- Initialize the database.
+-- Drop any existing data and create empty tables.
+
+DROP TABLE IF EXISTS users;
+DROP TABLE IF EXISTS prices;
+DROP TABLE IF EXISTS brands;
+DROP TABLE IF EXISTS tags;
+DROP TABLE IF EXISTS items;
+DROP TABLE IF EXISTS test;
+
+
+CREATE TABLE items (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  created TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  name TEXT NOT NULL,
+  imageURL TEXT NOT NULL,
+  category TEXT NOT NULL,
+  SKU TEXT NOT NULL,
+  brands TEXT NOT NULL,
+  prices TEXT NOT NULL,
+  tags TEXT NOT NULL,
+  URL TEXT NOT NULL
+);
+
+CREATE TABLE test (
+  name TEXT NOT NULL
+);
